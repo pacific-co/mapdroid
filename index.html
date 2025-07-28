@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapdroid</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mapdroid</h1>
+    <div class="search-wrapper">
+      <span class="material-symbols-outlined search-icon">search</span>
+      <input type="text" id="country-search" placeholder="Search countries..." />
+      <button id="clear-search" class="material-symbols-outlined clear-button hidden">close</button>
+    </div>
+    <ul id="country-list">
+      <!-- Countries will be loaded here by JavaScript -->
+    </ul>
+  </div>
+
+  <div id="bottom-sheet" class="bottom-sheet">
+    <div class="bottom-sheet-content">
+      <div class="bottom-sheet-header">
+        <h2 id="bottom-sheet-title"></h2>
+        <button class="close-button" onclick="closeBottomSheet()">×</button>
+      </div>
+      <div id="bottom-sheet-info" class="bottom-sheet-info">
+        <!-- Country-specific information goes here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
